@@ -1,18 +1,19 @@
 Pembelajaran
 Dalam tutorial ini, saya mempelajari alur program yang ada di springboot project. Mulai dari pengambilan url yang diterima lalu pemrosesan di bagian file java hingga tampilan dalam bentuk web. RequestMapping berfungsi menerima informasi dari url sehingga dapat masuk ke dalam method yang akan memprosesnya, lalu method tersebut akan mengembalikan nilai yang sesuai dengan nama dari file html yang akan menjadi tampilan web. Selain itu file html tersebut dapat menerima data dalam bentuk objek model, yang nantinya data tersebut dapat digunakan dalam file html terkait.
 
-Latihan Project Hello World
+Latihan 1 : Project Hello World
 	1. Whitelabel error, dikarenakan tidak ada yang menerima value dari url ("/hello123") di dalam Controller
-	2. Tidak terjadi perubahan apa-apa
+	2. Tidak terjadi perubahan apa-apa, karena perubahan nama method tidak berpengaruh
 	3. Whitelabel error, dikarenakan tidak ada halaman yang sesuai dengan return value yang diberikan ("hello123")
 
-Latihan Request Parameter
+Latihan 2 : Request Parameter
 	1. Selamat datang chanek!
-	2. Selamat datang null!
+	2. 	a. Whitelabel error, dikarenakan terdapat informasi wajib namun tidak ada di url
+		b. Selamat datang null!
 	3. Selamat datang dunia!
 	4. Dikarenakan akan tergantikan oleh pesan yang ada setelah tag pembuka (<p th:text=..) hingga tag penutup (</p>)
 
-Latihan 
-	1. Selamat datang dunia!
-	2. Selamat datang dengklek!
-	3. Selamat datang chanek!
+Latihan 3 
+	1. 	a. Selamat datang dunia!
+		b. Selamat datang dengklek!
+		c. Selamat datang chanek!
