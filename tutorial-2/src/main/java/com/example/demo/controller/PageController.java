@@ -15,7 +15,13 @@ public class PageController {
 	public String index (){
 		return "hello";
 	}
-
+	
+	@RequestMapping ( "/greeting")
+	public String greeting ( @RequestParam ( value = "name" , required = false, defaultValue = "dunia" ) String name , Model model){
+		model . addAttribute ( "name" , name );
+		return "greeting";
+	}
+	
 	@RequestMapping ( value = { "/greeting" , "greeting/{name}" })
 	public String greetingPath ( @PathVariable Optional < String > name , Model model ) {
 		if ( name . isPresent ()) {
